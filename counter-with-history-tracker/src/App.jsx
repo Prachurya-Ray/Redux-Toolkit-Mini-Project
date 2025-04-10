@@ -30,12 +30,12 @@ function App() {
   return (
     <div className="container flex flex-col items-center">
       <h1 className="text-2xl font-bold mt-8 mb-16">Counter</h1>
-      <p className="w-12 h-8 bg-red-100 font-semibold flex items-center justify-center rounded-md">
+      <p className="w-24 h-8 bg-yellow-100 shadow-md font-semibold flex items-center justify-center rounded-md">
         {countHistorry[countHistorry.length - 1]}
       </p>
       <div className="buttons flex gap-4 mt-5">
         <button
-          className="rounded-full text-white bg-green-500 font-bold w-14 py-1"
+          className="rounded-full shadow-lg text-white bg-green-500 font-bold w-14 py-1"
           onClick={() => {
             handleincreasecountValue();
           }}
@@ -43,7 +43,7 @@ function App() {
           +
         </button>
         <button
-          className="rounded-full text-white bg-red-500 font-bold w-14 py-1"
+          className="rounded-full shadow-lg text-white bg-red-500 font-bold w-14 py-1"
           onClick={() => {
             handledecreasecountValue();
           }}
@@ -51,7 +51,7 @@ function App() {
           -
         </button>
         <button
-          className="rounded-full text-white bg-yellow-500 w-14 py-1"
+          className="rounded-full shadow-lg text-white bg-yellow-500 w-14 py-1"
           onClick={() => {
             handleresetValue();
           }}
